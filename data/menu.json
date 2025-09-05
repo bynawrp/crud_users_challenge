@@ -1,0 +1,10 @@
+[
+    {
+        "title": "Acceuil",
+        "path": "/"
+    },
+    {
+        "title": "Utilisateurs",
+        "path": "/users"
+    }
+]

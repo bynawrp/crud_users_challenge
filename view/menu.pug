@@ -1,0 +1,8 @@
+mixin menuItem(path, title)
+    li&attributes(attributes)
+        a(href=path)= title
+
+nav
+    ul 
+        each item in menuItems 
+            +menuItem(item.path, item.title)

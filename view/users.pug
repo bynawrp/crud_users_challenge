@@ -1,0 +1,30 @@
+extends ./layout/layout
+
+mixin userItem(name, date, index)
+    tr 
+        td=name 
+        td=date 
+        td
+            a(href=`/update/${index}`) Modifier  
+            a(href=`/delete/${index}`) Supprimer
+
+block title
+    title Users
+
+block style 
+    link(rel="stylesheet" href="/style/users.css")
+
+block main 
+    h1 Liste des utilisateurs
+    if users && users.length > 0
+        table
+            thead
+                tr
+                    th Nom
+                    th Date de naissance
+                    th Action
+                tbody
+                    each user, index in users
+                        +userItem(user.name, user.birth, index)
+    else
+        p.unknow La liste des utilisateurs est vide.

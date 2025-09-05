@@ -1,0 +1,98 @@
+.error {
+    color: #dc3545;
+    background-color: #fff5f5;
+    border: 1px solid #f5c6cb;
+    padding: 16px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 32px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    gap: 1rem;
+}
+
+label {
+    font-weight: 500;
+    color: #666;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+input[type="text"],
+input[type="date"] {
+    padding: 12px 16px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 16px;
+    background: #fafafa;
+    transition: all 0.15s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+    outline: none;
+    background: white;
+    border-color: #adb5bd;
+}
+
+/* ADD FORM */
+.addform input[type="text"]:focus,
+.addform input[type="date"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+}
+
+.addform button {
+    background-color: #f8f9fa;
+    color: #007bff;
+    border: 1px solid #dee2e6;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.addform button:hover {
+    background-color: #e9ecef;
+    border-color: #adb5bd;
+}
+
+/* UPDATE FORM */
+.updateform input[type="text"]:focus,
+.updateform input[type="date"]:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.1);
+}
+
+.updateform button {
+    background-color: #f8f9fa;
+    color: #28a745;
+    border: 1px solid #dee2e6;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.updateform button:hover {
+    background-color: #e9ecef;
+    border-color: #adb5bd;
+}

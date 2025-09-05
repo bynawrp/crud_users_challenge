@@ -1,0 +1,27 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    text-align: center;
+}
+
+span {
+    font-size: 1.2rem;
+    color: #666;
+    background-color: white;
+    border: 2px solid #e9ecef;
+    padding: 60px 40px;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+span::before {
+    content: "404";
+    display: block;
+    font-size: 3rem;
+    font-weight: 300;
+    color: #dc3545;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+}
